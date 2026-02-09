@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow MO:MO | 天然素材のカラフル・ネパールモモ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .rainbow-text {
+            background: linear-gradient(to right, #ff0000, #ff7f00, #edff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hero Background with specific image */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(5,5,5,1)), url('https://raw.githubusercontent.com/username/repo/main/path/to/IMG_0031.PNG');
+            background-size: cover;
+            background-position: center 30%;
+        }
+        /* Fallback for preview if image path is not direct */
+        .hero-bg-fallback {
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(5,5,5,1)), url('https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cta-button {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: pulse 2.s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(236, 72, 153, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(236, 72, 153, 0); }
+        }
+
+        .glass-card-dark {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .momo-glow {
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
+        }
+        
+        .color-dot-red { background-color: #ff5f5f; }
+        .color-dot-blue { background-color: #5fafff; }
+        .color-dot-green { background-color: #5fff8f; }
+        .color-dot-yellow { background-color: #ffff5f; }
+        .color-dot-purple { background-color: #af5fff; }
+    </style>
+</head>
+<body class="bg-[#050505] text-gray-100">
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-end md:items-center justify-center overflow-hidden hero-bg pt-16 pb-20">
+        <!-- Content Overlay -->
+        <div class="container mx-auto px-4 z-10 text-center">
+            <span class="inline-flex items-center px-4 py-2 rounded-full bg-black/40 text-white font-bold text-sm mb-6 border border-white/20 backdrop-blur-md">
+                <span class="flex space-x-1 mr-3">
+                    <span class="w-2 h-2 rounded-full color-dot-red"></span>
+                    <span class="w-2 h-2 rounded-full color-dot-green"></span>
+                    <span class="w-2 h-2 rounded-full color-dot-blue"></span>
+                </span>
+                ひとくちで、心が走り出す
+            </span>
+            <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight tracking-tighter drop-shadow-2xl">
+                一粒ごとに、<br>違う<span class="rainbow-text">幸せ</span>が弾ける。
+            </h1>
+            <p class="text-xl md:text-2xl font-bold text-gray-200 mb-10 max-w-2xl mx-auto drop-shadow-lg">
+                笑顔を運ぶカラフルな7色。中身もすべて異なる「甘いサプライズ」を本場のスパイスと共に。
+            </p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <a href="#purchase" class="cta-button bg-pink-500 text-white text-2xl font-black px-12 py-6 rounded-full shadow-[0_10px_40px_rgba(236,72,153,0.5)] hover:bg-pink-600 transition">
+                    今すぐ虹を味わう
+                </a>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl flex items-center">
+                    <img src="https://raw.githubusercontent.com/username/repo/main/path/to/IMG_0033.PNG" 
+                         onerror="this.src='https://images.unsplash.com/photo-1541696440-8744a5db0228?auto=format&fit=crop&q=80&w=100'"
+                         class="w-12 h-12 rounded-full border-2 border-white momo-glow mr-3">
+                    <div class="text-left">
+                        <p class="text-xs text-gray-400 font-bold uppercase">Signature Set</p>
+                        <p class="text-lg font-black text-pink-400">¥500 / 7pcs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problem (PASONA) -->
+    <section class="py-24 bg-[#050505]">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-black text-center mb-16 leading-tight">
+                    笑顔がこぼれる、<br class="md:hidden">「<span class="rainbow-text">魔法のモモ</span>」。
+                </h2>
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-8">
+                        <p class="text-xl text-gray-300 leading-relaxed">
+                            ネパールの家庭で愛される「モモ」。私たちは、その伝統に色彩豊かな魔法をかけました。
+                        </p>
+                        <div class="bg-gradient-to-br from-white/10 to-transparent p-10 rounded-[3rem] border border-white/20">
+                            <p class="font-black text-2xl text-pink-400 mb-4">追いかけたくなる味：</p>
+                            <p class="text-gray-300 text-lg">皮を破ると溢れ出す、果実のソースやスパイスの香り。一つひとつが驚きに満ちた体験。子供も大人も夢中になる、全く新しい「デザートモモ」の誕生です。</p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <!-- Content Image: IMG_0032.PNG (Spiced Momo) -->
+                        <img src="https://raw.githubusercontent.com/username/repo/main/path/to/IMG_0032.PNG" 
+                             onerror="this.src='https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=600'"
+                             class="rounded-[2.5rem] shadow-2xl border border-white/10 transform -rotate-3 hover:rotate-0 transition duration-500">
+                        <div class="absolute -bottom-6 -right-6 bg-yellow-400 text-black px-6 py-4 rounded-2xl font-black rotate-12 shadow-xl">
+                            本場のスパイス香る
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Affinity & Solution -->
+    <section class="py-24 bg-[#0a0a0a]">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-20 tracking-tighter">7つのカラー、7つのストーリー</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="glass-card-dark p-10 rounded-[2.5rem] border-t-4 border-red-500 group hover:bg-white/10 transition">
+                    <span class="text-5xl mb-6 block transform group-hover:scale-110 transition">🍓</span>
+                    <h3 class="font-black mb-3 text-red-400 text-xl tracking-wider uppercase">Strawberry</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">完熟イチゴの果肉たっぷり。甘酸っぱい初恋の味。</p>
+                </div>
+                <div class="glass-card-dark p-10 rounded-[2.5rem] border-t-4 border-yellow-500 group hover:bg-white/10 transition">
+                    <span class="text-5xl mb-6 block transform group-hover:scale-110 transition">🥭</span>
+                    <h3 class="font-black mb-3 text-yellow-400 text-xl tracking-wider uppercase">Mango</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">南国の太陽を浴びたマンゴー。とろけるような口溶け。</p>
+                </div>
+                <div class="glass-card-dark p-10 rounded-[2.5rem] border-t-4 border-green-500 group hover:bg-white/10 transition">
+                    <span class="text-5xl mb-6 block transform group-hover:scale-110 transition">🌱</span>
+                    <h3 class="font-black mb-3 text-green-400 text-xl tracking-wider uppercase">Pistachio</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">香ばしいナッツの女王。上品で奥深いコク。</p>
+                </div>
+                <div class="glass-card-dark p-10 rounded-[2.5rem] border-t-4 border-purple-500 group hover:bg-white/10 transition">
+                    <span class="text-5xl mb-6 block transform group-hover:scale-110 transition">🫐</span>
+                    <h3 class="font-black mb-3 text-purple-400 text-xl tracking-wider uppercase">Blueberry</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">野生のベリーを凝縮。濃厚な紫のサプライズ。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof -->
+    <section class="py-24 bg-[#050505]">
+        <div class="container mx-auto px-4 max-w-5xl text-center">
+            <h2 class="text-4xl font-black mb-20 tracking-tighter italic">REVIEWS FROM THE RAINBOW</h2>
+            <div class="grid md:grid-cols-2 gap-10 text-left">
+                <div class="glass-card-dark p-12 rounded-[3.5rem] border-l-8 border-pink-500/30">
+                    <p class="text-gray-300 leading-relaxed text-lg italic mb-8">
+                        「子供がこんなに喜んで食べる姿は初めて。見た目だけじゃなく、本当に美味しいから驚きです。家族全員で笑顔になれました！」
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150" class="w-12 h-12 rounded-full border-2 border-pink-500 p-0.5 mr-4">
+                        <span class="text-gray-500 text-sm font-bold uppercase tracking-widest">A. Tanaka / Parent</span>
+                    </div>
+                </div>
+                <div class="glass-card-dark p-12 rounded-[3.5rem] border-l-8 border-blue-500/30">
+                    <p class="text-gray-300 leading-relaxed text-lg italic mb-8">
+                        「ネパールで食べた思い出のモモが、こんなにオシャレになってて感動。スパイスの使い方が本格的で、まさに五感で楽しむ料理です。」
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150" class="w-12 h-12 rounded-full border-2 border-blue-500 p-0.5 mr-4">
+                        <span class="text-gray-500 text-sm font-bold uppercase tracking-widest">K. Ito / Traveler</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer & Action -->
+    <section id="purchase" class="py-32 bg-[#050505] relative">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl md:text-7xl font-black mb-16 tracking-tighter">虹を連れて、帰りませんか？</h2>
+            <div class="max-w-2xl mx-auto bg-white rounded-[4rem] p-16 shadow-[0_0_100px_rgba(236,72,153,0.2)] mb-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-pink-600 text-white px-10 py-4 rounded-bl-[2.5rem] font-black tracking-widest text-sm uppercase">
+                    limited set
+                </div>
+                <p class="text-pink-600 font-black text-2xl mb-4 mt-4 text-left italic">Rainbow MO:MO 7色シグネチャー</p>
+                <div class="flex items-baseline justify-start space-x-3 mb-10 text-gray-900">
+                    <span class="text-8xl font-black tracking-tighter italic">¥500</span>
+                    <span class="text-2xl font-bold text-gray-400 italic">Limited Time</span>
+                </div>
+                
+                <div class="space-y-6 mb-12 border-y border-gray-100 py-10 text-gray-800 text-left">
+                    <div class="flex items-center text-xl font-bold"><i class="fas fa-heart text-pink-500 mr-5 text-2xl"></i> 全て異なる「幸せの味」</div>
+                    <div class="flex items-center text-xl font-bold"><i class="fas fa-leaf text-green-600 mr-5 text-2xl"></i> 天然由来100%の安心カラー</div>
+                    <div class="flex items-center text-xl font-bold"><i class="fas fa-smile-beam text-yellow-600 mr-5 text-2xl"></i> 笑顔になれるテイクアウトBOX付</div>
+                </div>
+
+                <button onclick="document.getElementById('modal').style.display='flex'" class="w-full bg-gray-900 text-white py-8 rounded-3xl font-black text-4xl hover:bg-black transition transform hover:scale-105 active:scale-95 shadow-[0_20px_60px_rgba(0,0,0,0.3)]">
+                    ORDER NOW
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black/98 hidden items-center justify-center z-50 p-4 backdrop-blur-3xl">
+        <div class="bg-gray-900 text-white rounded-[4rem] p-16 max-w-md w-full text-center relative border border-white/10 shadow-2xl">
+            <div class="absolute top-0 left-0 w-full h-3 flex">
+                <div class="flex-1 color-dot-red h-full"></div>
+                <div class="flex-1 color-dot-yellow h-full"></div>
+                <div class="flex-1 color-dot-green h-full"></div>
+                <div class="flex-1 color-dot-blue h-full"></div>
+                <div class="flex-1 color-dot-purple h-full"></div>
+            </div>
+            <div class="text-8xl mb-8">🥟✨</div>
+            <h3 class="text-4xl font-black mb-6 tracking-tighter italic">NAMASTE!</h3>
+            <p class="text-gray-400 mb-10 text-xl font-bold leading-relaxed">
+                虹を運ぶ準備をしています。<br>少々お待ちください。
+            </p>
+            <button onclick="document.getElementById('modal').style.display='none'" class="w-full bg-pink-600 text-white py-5 rounded-2xl font-black text-xl hover:bg-pink-700 transition shadow-lg">CLOSE</button>
+        </div>
+    </div>
+
+    <footer class="py-20 bg-black text-gray-600 text-center text-sm border-t border-white/5">
+        <div class="flex justify-center space-x-4 mb-10 opacity-30">
+            <span class="w-3 h-3 rounded-full color-dot-red"></span>
+            <span class="w-3 h-3 rounded-full color-dot-yellow"></span>
+            <span class="w-3 h-3 rounded-full color-dot-green"></span>
+            <span class="w-3 h-3 rounded-full color-dot-blue"></span>
+            <span class="w-3 h-3 rounded-full color-dot-purple"></span>
+        </div>
+        <p class="mb-4 tracking-[1em] uppercase font-black text-gray-500 text-xs">Rainbow MO:MO - A Piece of Happiness.</p>
+        <p class="font-bold opacity-50">&copy; 2024 Rainbow MO:MO Project.</p>
+    </footer>
+
+</body>
+</html>
